@@ -4,11 +4,13 @@ An interactive React dashboard for visualizing K–5 English Language Arts diagn
 
 ## Features
 
-- **Overview tab** — School-wide summary with stat cards (median score, percentile, diagnostic gain, zero-growth alerts), a score distribution scatter plot by grade, and a growth-vs-typical bar chart by grade
-- **Skills breakdown tab** — Radar charts comparing domain performance (phonics, high-frequency words, vocabulary, comprehension) across grades, plus a detailed classroom data table with per-student metrics
-- **Filtering** — Filter by grade level (K–5 or All) to drill into specific cohorts
-- **Interactive charts** — Hover tooltips on scatter plots and bar charts for individual student detail
-- **ACAP projections** — Projected ACAP proficiency levels for grades 2+ with color-coded indicators
+- **Time point navigation** — Toggle between Fall (BOY), Winter (MOY), and Spring (EOY) to compare performance across the year
+- **Overview tab** — Stat cards (avg score, percentile, growth from Fall, grade-level placement), score distribution strip chart, and gain-by-grade bar charts. Fall view shows a stacked placement breakdown instead of growth metrics
+- **Growth tab** — Percentile vs. growth scatter plot, zero-growth bars by grade, and highest-growth leaderboard. Fall view explains the baseline with a placement breakdown
+- **Sub-Skills tab** — Radar chart for domain performance (phonics, HFW, vocabulary, comprehension) and comprehension sub-score comparison by grade, plus a low-percentile student grid
+- **Classrooms tab** — Horizontal bar charts for avg score and growth by teacher, plus a full classroom data table
+- **Grade filtering** — Filter all views by grade level (K–5 or All)
+- **Interactive charts** — Hover tooltips on all charts for individual student and classroom detail
 
 ## Tech Stack
 
