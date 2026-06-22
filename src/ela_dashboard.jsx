@@ -293,7 +293,7 @@ export default function Dashboard() {
         <StatCard label="Avg Percentile" value={(avg(filtered,"percentile")?.toFixed(0)??"—")+"th"} sub="national norm ranking" color="#4A7FA5" />
         {!isfall && <StatCard label={gainLabel} value={avgGainVal!=null?(avgGainVal>=0?"+":"")+avgGainVal.toFixed(1):"—"} sub="points gained since Fall baseline" color={T.sage} />}
         {!isfall && <StatCard label="No Growth" value={pctZero+"%"} sub={`${zeroGain} students with no change since Fall`} color={T.amber} />}
-        {isfall && <StatCard label="At / Above Grade Level" value={Math.round(students.filter(s=>s.relative_placement==="Mid or Above Grade Level").length/students.length*100)+"%"} sub="of students entering on track" color={T.sage} />}
+        {isfall && <StatCard label="At / Above Grade Level" value={Math.round(students.filter(s=>s.relative_placement==="Mid or Above Grade Level"||s.relative_placement==="Early On Grade Level").length/students.length*100)+"%"} sub="of students entering on track" color={T.sage} />}
         {isfall && <StatCard label="Below Grade Level" value={Math.round(students.filter(s=>s.relative_placement&&s.relative_placement.includes("Below")).length/students.length*100)+"%"} sub="of students entering below grade level" color={T.amber} />}
       </div>
 
